@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu73e333nverh"]
+
+[ext_resource type="Script" path="res://Scripts/Scenes/Karya4.cs" id="1_nw2ow"]
+[ext_resource type="Script" path="res://Scripts/Scenes/BackBtn.cs" id="2_f86xq"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_nw2ow")
+
+[node name="BtnBack" type="Button" parent="."]
+text = "Back"
+script = ExtResource("2_f86xq")
+
+[node name="speed" type="Label" parent="."]
+offset_left = 59.0
+offset_top = 21.0
+offset_right = 193.0
+offset_bottom = 44.0
+text = "Animation Speed: 1"
+
+[node name="hint" type="Label" parent="."]
+offset_left = 259.0
+offset_top = 20.0
+offset_right = 409.0
+offset_bottom = 43.0
+text = "( ↑ arrow up menaikkan speed, ↓ arrow down menurunkan speed)"
+
+[node name="fps" type="Label" parent="."]
+offset_left = 1652.0
+offset_top = 21.0
+offset_right = 1802.0
+offset_bottom = 44.0
+text = "FPS:"
+
+[connection signal="pressed" from="BtnBack" to="BtnBack" method="_on_BtnBack_pressed"]

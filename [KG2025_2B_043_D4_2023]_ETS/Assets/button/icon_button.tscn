@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://sm4xs2o0jfyd"]
+
+[ext_resource type="Texture2D" uid="uid://c0l24cwgcvg4a" path="res://assets/language_button/language_button_normal.png" id="1_r3lur"]
+[ext_resource type="Texture2D" uid="uid://bapxs1xkqvd1i" path="res://assets/language_button/language_button_hover.png" id="2_dfusj"]
+
+[node name="IconButton" type="TextureButton"]
+custom_minimum_size = Vector2(110, 74)
+offset_right = 40.0
+offset_bottom = 40.0
+size_flags_horizontal = 12
+size_flags_vertical = 10
+texture_normal = ExtResource("1_r3lur")
+texture_pressed = ExtResource("2_dfusj")
+texture_hover = ExtResource("2_dfusj")
+texture_focused = ExtResource("2_dfusj")
+ignore_texture_size = true

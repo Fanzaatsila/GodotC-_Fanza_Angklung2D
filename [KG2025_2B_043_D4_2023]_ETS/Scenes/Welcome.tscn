@@ -1,0 +1,89 @@
+[gd_scene load_steps=3 format=3 uid="uid://2jnayay8fv7m"]
+
+[ext_resource type="Script" path="res://Scripts/Scenes/Welcome.cs" id="1_bopk1"]
+[ext_resource type="Texture2D" uid="uid://dfp7gxv0cxpns" path="res://Assets/polban.png" id="2_2r0nr"]
+
+[node name="Welcome" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bopk1")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -36.0
+offset_right = 64.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2r0nr")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 187.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnKarya1" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Karya 1
+"
+
+[node name="BtnKarya2" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Karya 2"
+
+[node name="BtnKarya3" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Karya 3"
+
+[node name="BtnKarya4" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Karya 4"
+
+[node name="BtnAbout" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "About"
+
+[node name="BtnGuide" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Guide"
+
+[node name="BtnExit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Exit"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BtnKarya1" to="." method="_on_BtnKarya1_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BtnKarya2" to="." method="_on_BtnKarya2_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BtnKarya3" to="." method="_on_BtnKarya3_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BtnKarya4" to="." method="_on_BtnKarya4_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BtnAbout" to="." method="_on_BtnAbout_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BtnGuide" to="." method="_on_BtnGuide_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BtnExit" to="." method="_on_BtnExit_pressed"]
