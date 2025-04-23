@@ -4,6 +4,8 @@
 **Engine:** Godot Engine  
 
 ---
+![Tampilan Antarmuka Angklung]([KG2025_2B_043_D4_2023]_ETS/Assets/Screenshot 2025-04-23 at 22.02.23.png)
+
 
 ## 📝 Deskripsi
 
