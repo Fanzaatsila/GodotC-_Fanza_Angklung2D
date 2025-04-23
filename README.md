@@ -26,8 +26,8 @@ Desain ini bukan hanya representasi visual, melainkan juga simbol harmoni sosial
 |--------|--------------------------------------------------------------------------|
 | 1      | Pembuatan dan penyusunan **motif dasar geometris** pada desain Angklung |
 | 2      | Implementasi interaktivitas dan animasi awal                            |
-| 3      | Penambahan slider kontrol dan penyempurnaan tampilan                    |
-| 4      | **Finishing:** perbaikan bug, optimasi interaksi, dan dokumentasi final |
+| 2      | Penambahan slider kontrol dan penyempurnaan tampilan                    |
+| 2      | **Finishing:** perbaikan bug, optimasi interaksi, dan dokumentasi final |
 
 ---
 
